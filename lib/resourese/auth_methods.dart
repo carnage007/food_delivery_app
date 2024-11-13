@@ -11,7 +11,7 @@ class AuthMethods {
   // Firebase Database, will use to get reference.
   static final FirebaseDatabase _database = FirebaseDatabase.instance;
   static final DatabaseReference _userReference =
-      _database.reference().child("Users");
+      _database.ref().child("Users");
 
   // current user getter
   Future<User> getCurrentUser() async {

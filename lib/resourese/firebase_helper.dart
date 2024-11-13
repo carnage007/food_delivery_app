@@ -13,11 +13,11 @@ class FirebaseHelper {
   static final FirebaseDatabase _database = FirebaseDatabase.instance;
 
   static final DatabaseReference _ordersReference =
-      _database.reference().child("Orders");
+      _database.ref().child("Orders");
   static final DatabaseReference _categoryReference =
-      _database.reference().child("Category");
-  static final DatabaseReference _foodReference =
-      _database.reference().child("Foods");
+      _database.ref().child("Category");
+  // static final DatabaseReference _foodReference =
+  //     _database.ref().child("Foods");
 
   // fetch all foods list from food reference
   Future<List<FoodModel>> fetchAllFood() async {
